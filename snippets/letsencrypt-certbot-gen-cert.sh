@@ -1,0 +1,1 @@
+certbot certonly --dry-run -n --agree-tos -m foobar@example.com --webroot -d example.com -w /var/www/html --renew-hook "systemctl restart nginx"
