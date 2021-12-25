@@ -1,5 +1,6 @@
 {
   "dns": [ "127.0.0.1" ],
+  "dns-search": ["localdomain"],
   "live-restore": true,
   "log-driver": "json-file",
   "log-opts": {
