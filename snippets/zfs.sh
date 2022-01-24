@@ -4,6 +4,7 @@ zpool create -O encryption=on -O keyformat=passphrase -f -m <MOUNTPOINT> <POOL_N
   mirror <HDD3> <HDD4>
 
 # mount encrypted pool
+zpool import -a
 zfs load-key <POOL_NAME>
 zfs mount -a
 
