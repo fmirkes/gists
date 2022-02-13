@@ -16,5 +16,8 @@ https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.tx
 https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
 https://www.i-dont-care-about-cookies.eu/abp
 
+# AMP
+https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt
+
 # Everything (huge list, use for DNS server)
 https://abp.oisd.nl
