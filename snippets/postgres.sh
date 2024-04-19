@@ -5,6 +5,7 @@ su - postgres -c '/usr/lib/postgresql/12/bin/initdb /var/lib/postgresql/12/main'
 # create user and db
 su - postgres -c 'createuser -P <USER>'
 su - postgres -c 'createdb -O <USER> <DB>'
+su - postgres -c 'createdb --template=template0 --encoding=UTF8 -O <USER> <DB>'
 
 # create superuser
 CREATE ROLE <USER> LOGIN SUPERUSER PASSWORD '<PASSWORD>';
