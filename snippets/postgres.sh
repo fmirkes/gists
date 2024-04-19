@@ -12,5 +12,5 @@ createdb -h 'localhost' -U '<USER>' --password -O '<USER>' '<DB>'
 psql -h 'localhost' -U '<USER>' --password # add '-d postgres' if you haven't created a user db
 
 # create/restore dumps
-su - postgres -c 'pg_dump <DB>' | tee > '<DUMP>'
+su - postgres -c 'pg_dump -f <DUMP> <DB>'
 su - postgres -c 'pg_restore -d <DB> <DUMP>'
