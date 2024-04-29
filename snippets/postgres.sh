@@ -15,3 +15,4 @@ psql -h 'localhost' -U '<USER>' --password # add '-d postgres' if you haven't cr
 # create/restore dumps
 su - postgres -c 'pg_dump -f <DUMP> <DB>'
 su - postgres -c 'pg_restore -d <DB> <DUMP>'
+su - postgres -c 'psql -d <DB> <DUMP>'
