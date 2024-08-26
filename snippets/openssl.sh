@@ -17,6 +17,9 @@ openssl rsautl -encrypt -inkey public.pem -pubin -in file -out file.enc
 # rsa decrypt
 openssl rsautl -decrypt -inkey private.pem -in file.enc > file
 
+# create pkcs12 store
+openssl pkcs12 -export -name 'cert_alias' -password "pass:changeit" -in 'cert.pem' -inkey 'key.pem' -out 'cert.p12'
+
 # extract certs from pkcs12
 openssl pkcs12 -in store.pfx -nocerts -out key.pem
 openssl pkcs12 -in store.pfx -clcerts -nokeys -out cert.pem
