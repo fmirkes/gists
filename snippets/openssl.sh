@@ -3,6 +3,7 @@ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout cert.key -out cert.
 
 # show certs
 openssl x509 -text -in cert.pem
+openssl x509 -noout -text -in cert.pem
 openssl x509 -inform der -text -in cert.der
 
 # show smtp cert
