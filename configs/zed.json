@@ -1,6 +1,8 @@
 {
   "disable_ai": true,
+  
   "format_on_save": "off",
+  "tab_size": 2,
   
   "collaboration_panel": {
     "button": false
