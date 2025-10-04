@@ -21,8 +21,20 @@ max_lines = 5
 [buffer.mark_as_read]
 on_application_exit = true
 on_buffer_close = false
-on_scroll_to_bottom = false
+on_scroll_to_bottom = true
 on_message_sent = false
+
+[buffer.server_messages.change_host]
+enabled = false
+
+[buffer.server_messages.change_mode]
+enabled = false
+
+[buffer.server_messages.change_nick]
+enabled = false
+
+[buffer.server_messages.change_topic]
+enabled = false
 
 [buffer.server_messages.join]
 enabled = false
@@ -31,6 +43,9 @@ enabled = false
 enabled = false
 
 [buffer.server_messages.quit]
+enabled = false
+
+[buffer.server_messages.topic]
 enabled = false
 
 [pane]
