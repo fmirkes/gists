@@ -1,0 +1,37 @@
+theme = "discord"
+
+[actions.buffer]
+click_channel_name = "replace-pane"
+click_highlight = "replace-pane"
+click_username = "replace-pane"
+local = "replace-pane"
+message_channel = "replace-pane"
+message_user = "replace-pane"
+
+[actions.sidebar]
+buffer = "replace-pane"
+
+[buffer.channel.nicklist]
+enabled = false
+
+[buffer.channel.topic]
+enabled = true
+max_lines = 5
+
+[buffer.mark_as_read]
+on_application_exit = true
+on_buffer_close = false
+on_scroll_to_bottom = false
+on_message_sent = false
+
+[buffer.server_messages.join]
+enabled = false
+
+[buffer.server_messages.part]
+enabled = false
+
+[buffer.server_messages.quit]
+enabled = false
+
+[pane]
+restore_on_launch = false
