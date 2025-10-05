@@ -18,12 +18,6 @@ enabled = false
 enabled = true
 max_lines = 5
 
-[buffer.mark_as_read]
-on_application_exit = true
-on_buffer_close = false
-on_scroll_to_bottom = true
-on_message_sent = false
-
 [buffer.server_messages.change_host]
 enabled = false
 
@@ -48,5 +42,15 @@ enabled = false
 [buffer.server_messages.topic]
 enabled = false
 
+[logs]
+file_level = 'off'
+pane_level = 'off'
+
 [pane]
 restore_on_launch = false
+
+[servers.znc]
+nickname = "user@identifier/network"
+server = "irc.example.com"
+password = "hunter2"
+who_poll_enabled = false
