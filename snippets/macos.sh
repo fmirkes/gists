@@ -2,4 +2,8 @@
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 
 # bypass gatekeeper
-xattr -d com.apple.quarantine <EXECUTABLE>
+sudo xattr -d com.apple.quarantine <EXECUTABLE>
+
+# reset app permissions
+sudo tccutil reset All
+
